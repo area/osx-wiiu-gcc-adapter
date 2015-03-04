@@ -6,6 +6,7 @@ mkdir ./dmg/wiiu-gc-adapter/bin/
 mkdir ./dmg/wiiu-gc-adapter/Frameworks/
 cp -r ./*.framework ./dmg/wiiu-gc-adapter/Frameworks/
 cp -r ./wjoy.kext ./dmg/wiiu-gc-adapter/Frameworks/
+cp -r ./wiiu-gcc-adapter/libusb-1.0.a ./dmg/wiiu-gc-adapter/Frameworks/
 cp -r ./WiiuGCCAdapter.kext ./dmg/
 cp ./com.area.gamecubeAdapter.plist ./dmg/
 cp ./DerivedData/wiiu-gcc-adapter-bin/Build/Products/Debug/wiiu-gcc-adapter-bin ./dmg/wiiu-gc-adapter/bin/

@@ -16,6 +16,7 @@
 		30881BE11A86558A00162A1C /* WirtualJoy.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 30881BD01A84687700162A1C /* WirtualJoy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3098CB5F1A8460C800DF7162 /* libusb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3098CB5E1A8460C800DF7162 /* libusb-1.0.a */; };
 		30B5281F1A7A564400F565FA /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30B5281E1A7A564400F565FA /* main.mm */; };
+		FA9367C31AA6DF3D004F4AD0 /* libusb-1.0.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3098CB5E1A8460C800DF7162 /* libusb-1.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 			dstPath = ../frameworks;
 			dstSubfolderSpec = 10;
 			files = (
+				FA9367C31AA6DF3D004F4AD0 /* libusb-1.0.a in CopyFiles */,
 				30881BDE1A86558A00162A1C /* wjoy.kext in CopyFiles */,
 				30881BDF1A86558A00162A1C /* VHID.framework in CopyFiles */,
 				30881BE01A86558A00162A1C /* IOKit.framework in CopyFiles */,
