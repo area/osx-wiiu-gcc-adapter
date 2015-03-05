@@ -6,7 +6,7 @@
     <string>com.area.gamecubeAdapter</string>
     <key>ProgramArguments</key>
     <array>
-    <string>/Applications/wiiu-gc-adapter/wiiu-gcc-adapter-bin</string>
+    <string>/Applications/wiiu-gc-adapter/bin/wiiu-gcc-adapter-bin</string>
     </array>
     <key>LaunchEvents</key>
     <dict>
