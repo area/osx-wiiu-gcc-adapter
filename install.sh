@@ -5,6 +5,7 @@ chown root /Library/LaunchAgents/com.area.gamecubeAdapter.plist
 chgrp wheel /Library/LaunchAgents/com.area.gamecubeAdapter.plist
 
 cp -r $DIR/wiiu-gc-adapter /Applications/
+chown -R root:wheel /Applications/wiiu-gc-adapter/Frameworks/WirtualJoy.framework
 
 cp -r "$DIR/WiiuGCCAdapter.kext" /Library/Extensions/
 chown -R root:wheel /Library/Extensions/WiiuGCCAdapter.kext
