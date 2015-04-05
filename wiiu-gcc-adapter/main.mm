@@ -76,18 +76,22 @@ void cbin(struct libusb_transfer* transfer)
             point.y = stickY;
             [VHID setPointer:0 position:point];
             
-            stickXRaw = p[5];
-            stickYRaw = p[6];
+            //This weird reordering is so that the axes map the same as XBOX Controller
+            //axes, to increase compatability 'Monaco (What's yours is mine)' didn't work properly without
+            //this ordering, for example.
+            
+            stickXRaw = p[7];
+            stickYRaw = p[5];
             stickX = (float)stickXRaw / (128.0) - 1.0;
-            stickY = (float)stickYRaw / (128.0) - 1.0;
+            stickY = -(float)stickYRaw / (128.0) + 1.0;
             point.x = stickX;
             point.y = stickY;
             [VHID setPointer:1 position:point];
             
-            stickXRaw = p[7];
+            stickXRaw = p[6];
             stickYRaw = p[8];
-            stickX = (float)stickXRaw / (255.0);
-            stickY = (float)stickYRaw / (255.0);
+            stickX = -(float)stickXRaw / (128.0) + 1.0;
+            stickY = -(float)stickYRaw / (128.0) + 1.0;
             point.x = stickX;
             point.y = stickY;
             [VHID setPointer:2 position:point];
