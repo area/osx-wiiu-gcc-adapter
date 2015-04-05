@@ -30,3 +30,7 @@ This is an unsigned Kext that prevents the kernel from grabbing the USB adapter,
 Note that the install script also sets `nvram boot-args=kext-dev-mode=1`, which allows this unsigned kext to be installed and loaded. This will allow *all* unsigned kexts to be loaded on your system. I have joined the Apple Developer's Program so that hopefully I will be able to sign this Kext in the future and remove this limitation.
 
 If you wish to contribute to that membership, or otherwise show support for this driver, you can make a bitcoin payment to `1J7Xxv4Er2mnatbGXZpLtV4JJqq6UdS6tG`.
+
+##Thanks
+- Mitch Dzugan for the original userspace implementation of the driver (i.e. the repository this is originally forked from)
+- Original testers on GBATemp and Reddit
