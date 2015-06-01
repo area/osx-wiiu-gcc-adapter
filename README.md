@@ -19,7 +19,7 @@ state.
 This installs three components.
 
 ##A launchagent
-This is installed to `/Library/LaunchAgents/com.area.gamecubeAdapter.plist`. This causes the userspace driver to start every time the adapter is plugged it. The userspace driver exits when the adapter is unplugged.
+This is installed to `/Library/LaunchAgents/com.area.gamecubeAdapter.plist`. This causes the userspace driver to start every time the adapter is plugged it. The userspace driver exits when the adapter is unplugged. Only one adapter is supported for now.
 
 ##The userspace driver
 The userspace driver and its supporting frameworks are installed to `/Applications/wiiu-gcc-adapter`. This is the program that actually interprets the data received by the adapter and maps it onto fake HID controllers.
