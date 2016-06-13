@@ -1,3 +1,9 @@
+#Applicability
+
+First, this driver is totally untested on El Capitan and later. I've not had time to update it, but the reports I've seen suggest that some work is needed to get it working there.
+
+If you just want to use the adapter in Dolphin, and not as USB controllers in other emulators or games, it is much simpler to just follow the instructions on the [Dolphin Wiki](https://wiki.dolphin-emu.org/index.php?title=How_to_use_the_Official_GameCube_Controller_Adapter_for_Wii_U_in_Dolphin#OS_X), which _does_ work on El Capitan.
+
 #How to use
 
 If downloading from source, then you will need Xcode to build. Open
